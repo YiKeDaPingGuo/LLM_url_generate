@@ -1,0 +1,9 @@
+# MinIO 配置（请根据实际环境修改）
+minio_client = Minio(
+    "10.134.237.61:9000",  # MinIO 服务地址
+    access_key="minioadmin",  # 访问密钥
+    secret_key="minioadmin",  # 私有密钥
+    secure=False  # HTTP 访问，HTTPS 设为 True
+)
+bucket_name = "course-materials"  # MinIO 存储桶名称
+csv_path = "course-info.csv"  # CSV 文件路径（请修改为实际路径）
